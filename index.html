@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller TypeScript</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+    <body>
+        <div class="container">
+            <div class="row1">
+                <div class="col">
+                    <span class="col-12">
+                        <img src="images/tv-logo-letter-initial-logo-designs-template-free-vector.jpg" height="50">
+                        <h1 style="text-align: left; display: inline-block; vertical-align: middle; margin-left: 20px; color: black;">TV Series</h1>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="details" class="card" style="display: none;">
+                    <img class="card-img-top" id="image" src="" alt="Serie Image">
+                    <div class="card-body">
+                        <h5 class="card-title" id="name"></h5>
+                        <p class="card-text" id="description"></p>
+                        <a href="#" class="btn btn-primary text-center" id="url" target="_blank">url</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row" style="margin-top: 25px;"> 
+                <div class="col-12 col-md-6"> 
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                            </tr>
+                        </thead>                      
+                        <tbody class="body" id="series"></tbody>
+                    </table>
+                    <div class="row justify-content-end">
+                        <p class="col-12">Seasons average: <span id="AverageSeasons"></span></p>
+                </div>
+            </div>
+        </div>
+        <script  type="module" src="./scripts/Serie.js"></script>
+        <script  type="module" src="./scripts/data.js"></script>
+        <script  type="module" src="./scripts/main.js"></script>
+    </body>
+</html>
